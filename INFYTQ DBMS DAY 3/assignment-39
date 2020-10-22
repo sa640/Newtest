@@ -1,0 +1,3 @@
+select DESIGNATION,SALARY from empdetails 
+where DESIGNATION in ( 'Manager' , 'Billing Staff')
+and salary between 2500 and  5000
