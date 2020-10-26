@@ -1,0 +1,14 @@
+dict1={'O':'I','S':'A','G':'F','M':'N','R':'E','Y':'T','P':'O','F':'D','S':'A','U':'Y','/':'.',
+    ',':'M'}
+s='O S, GOMR YPFSU/'
+ans=''
+for i in s:
+    if i==(' '):
+        ans+=' '
+    else:
+        ans+=dict1[i]
+        
+         
+     
+     
+print(ans)
