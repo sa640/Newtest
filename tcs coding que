@@ -1,0 +1,16 @@
+n= int(input("enter a no:"))
+a=0
+invalid=0
+for i in range(n):
+    s=str(input("enter  mob no:"))
+    for i in s:
+        if i.isalpha():
+            a+=1 
+            
+    if len(s)>10 or  len(s)<10 or a>=1:
+        invalid+=1 
+    
+ 
+print('Q')       
+print("total invalid mob no's are:", invalid)
+    
