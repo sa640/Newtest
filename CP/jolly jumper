@@ -1,0 +1,20 @@
+n=int(input('enter a count:'))
+arr=[]
+for i in range(n):
+    s=int(input('enter a number:'))
+    arr.append(s)
+    
+diff=[]
+l=len(arr)
+for i in range(0,l-1):
+    sub=abs(arr[i]-arr[i+1])
+    diff.append(sub)
+    
+    
+s_diff=sorted(diff)
+if diff==s_diff[::-1]:
+    print('Jolly')
+else:
+    print('Not Jolly')
+
+    
