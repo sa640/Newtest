@@ -1,13 +1,15 @@
-n= int(input("enter a no of elements:"))
-l=[]
-for i in range(n):
-    p=int(input("enter a no:"))
-    l.append(p)
-    
-diff=[]
-for i in range(0,n-1):
-    sub=abs(l[i]-l[i+1])
-    diff.append(sub)
-diff.remove(min(diff))
-print(sum(diff))
+t=int(input("no of testcases:"))
+for i in range(t):
+    s=input("enter a no's:")
+    l=list(s)
+    print(l)
+    diff=[]
+    n=len(l)
+    for i in range(0,n-1):
+        sub=abs(int(l[i])-int(l[i+1]))
+        diff.append(sub)
+    diff.remove(min(diff))
+    print(sum(diff))
+     
+      
     
