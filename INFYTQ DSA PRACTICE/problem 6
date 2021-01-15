@@ -1,0 +1,20 @@
+def skip_n_merge_list(list1,list2,n):
+    
+    l=[]
+    temp1= list1.get_head()
+    while(temp1):
+        l.append(temp1.get_data())
+        temp1= temp1.get_next()
+    
+    l1=[]   
+    temp2= list2.get_head()
+    while(temp2):
+        l1.append(temp2.get_data())
+        temp2= temp2.get_next()
+        
+    l3=l[:n]+l1+l[n:]
+    
+    list1=LinkedList()
+    for i in l3:
+        list1.add(i)
+    return list1
