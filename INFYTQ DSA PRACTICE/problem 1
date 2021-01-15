@@ -1,0 +1,15 @@
+def change_order(input_list):
+    l=[]
+    temp=input_list.get_head()
+    while(temp):
+        l.append(temp.get_data())
+        temp=temp.get_next()
+        
+    
+    n=len(l)
+    l1=l[n-1:] + l[:n-1]
+    
+    input_list= LinkedList()
+    for i in l1:
+        input_list.add(i)
+    return input_list
