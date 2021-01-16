@@ -1,0 +1,14 @@
+
+        
+def sort_stack(stack1):
+    l=[]
+    while not stack1.is_empty():
+        l.append(stack1.pop())
+        
+    l=sorted(l)[::-1]
+    
+    stack1=Stack(stack1.get_max_size())
+    for i in l:
+        stack1.push(i)
+
+    return stack1
