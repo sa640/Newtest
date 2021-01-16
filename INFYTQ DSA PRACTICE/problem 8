@@ -1,0 +1,15 @@
+def create_seqeunce(message):  
+    l=len(message)
+    result=""
+    
+    for i in message:
+        if i=="*":
+            pass
+        else:
+            result+=i
+            
+            
+    return result
+    
+    
+
