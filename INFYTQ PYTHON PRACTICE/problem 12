@@ -1,0 +1,14 @@
+def generate_sentences(subjects,verbs,objects):
+	sen=" "
+	list1=[]
+	for i in range(len(subjects)):
+	    for j in range (len(verbs)):
+	        for k in  range (len(objects)):
+	            sen=subjects[i]+" " +verbs[j]+" "+objects[k]
+	            list1.append(sen)
+	            
+	return list1
+subjects=["I","You"]
+verbs=["love", "play"]
+objects=["Hockey","Football"]
+print(generate_sentences(subjects,verbs,objects))
