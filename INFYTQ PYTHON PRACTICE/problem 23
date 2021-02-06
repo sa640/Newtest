@@ -1,0 +1,12 @@
+def divisible_by_sum(number):
+    s=str(number)
+    summ=0
+    for i in s:
+        summ+=int(i)
+        
+    if number%summ==0:
+        return True
+    else:
+        return False
+number=42
+print(divisible_by_sum(number))
