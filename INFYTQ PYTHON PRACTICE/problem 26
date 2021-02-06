@@ -1,0 +1,17 @@
+def check_occurence(string):
+    j_count=0
+    m_count=0
+    l=string.split(" ")
+    
+    for i in l:
+        if i=="Jet" or i=="jet":
+            j_count+=1
+        elif i=="Mat" or i=="mat":
+            m_count+=1 
+            
+    if j_count==m_count:
+        return True
+    else:
+        return False
+string="Jet on the Mat but mat is too long"
+print(check_occurence(string))
