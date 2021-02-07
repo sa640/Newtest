@@ -1,0 +1,40 @@
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the maximumToys function below.
+def maximumToys(prices, k):
+    l=sorted(prices)
+    toyes=0
+    for i in l:
+        if i<=k:
+            k-=i
+            toyes+=1 
+        else:
+            break
+        
+    return toyes
+        
+    
+    
+    
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    nk = input().split()
+
+    n = int(nk[0])
+
+    k = int(nk[1])
+
+    prices = list(map(int, input().rstrip().split()))
+
+    result = maximumToys(prices, k)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
