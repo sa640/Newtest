@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+   
+   
+   int summ=0,i;
+   boolean t=true;
+   Scanner sc= new Scanner(System.in);
+  
+     System.out.println("enter a number");
+     int n= sc.nextInt();
+         
+        for(i=2;i<n;i++)
+        {
+            if(n%i==0)
+             {
+                t=false;
+                
+             }
+             
+        }
+        if (t==false)
+          System.out.println(" not prime no");
+        else
+              {
+          System.out.println("prime  no");
+              }
+          
+                 
+             }
+        }
+            
+            
+            
+            
+            
