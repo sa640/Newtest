@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+   
+   
+   int summ=0,i,t;
+   Scanner sc= new Scanner(System.in);
+  
+     System.out.println("enter a number");
+     int n= sc.nextInt();
+     t=n;
+        
+        while(n>0)
+        {
+            i=n%10;
+            n=n/10;
+            summ+=i*i*i;
+        }
+     
+         
+         
+         if(summ==t)
+         {
+              System.out.println("amstrong no");
+              
+         }
+         else
+         {
+              System.out.println("not an amstrong no");
+         }
+         
+         }
+     }
+     
+     
+      
