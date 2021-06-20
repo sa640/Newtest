@@ -1,0 +1,26 @@
+public class MyClass {
+    public static void main(String args[]) {
+    
+       int [] nums= new int[50];
+       
+       int p[][]={
+           {5,3,2,5},
+           {5,7,},
+           {3,7,9,}
+       };
+       
+       for(int i[] :p)
+       {
+           for(int j:i)
+           {
+               System.out.printf(j+" ");
+           }
+             System.out.println(" ");
+       }
+        
+          
+           }
+       }
+       
+       
+       
