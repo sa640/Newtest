@@ -1,0 +1,26 @@
+public class MyClass {
+    public static void main(String ... args) {
+        
+        Abc obj=new Abc(8,9.7);
+     
+    }
+}
+//  two constructor with having same name and different parameters is called constructor overloading.
+
+class Abc{
+    public Abc()
+    {
+        
+      System.out.println("hi");
+    }
+     public Abc(int i)
+    {
+        
+      System.out.println("hello");
+    }
+     public Abc(int i,double b)
+    {
+        
+      System.out.println("heyyy");
+    }
+}
