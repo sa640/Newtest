@@ -1,0 +1,26 @@
+public class MyClass {
+    public static void main(String ... args) {
+        
+       
+       A obj1= new A();
+        A obj2= new A();
+         A obj3= new A();
+          A obj4= new A();
+          obj4.counter();   
+    }
+}
+class A
+    {   
+        static int i;    //  by using keyword 'static' you can make varible as class variable. 
+        public A()
+         {
+             i++;
+            System.out.println("hi");
+            }
+        
+        public void counter()
+        {
+             System.out.println(i);
+        }
+    }
+    
