@@ -1,0 +1,36 @@
+//two method with same name and same no of  parameters in two different class!!
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	
+	B obj= new B();
+	obj.show();
+	 
+	}
+}
+class A // method overriding,late binding,dynamic binding,runtime polymorphism
+{
+
+    public void show(){
+        System.out.println("HELLO");
+    }
+     public void show(int i){
+        System.out.println("HELLO"  + i);
+    }
+    
+     public void show(double d){
+        System.out.println("great!!");
+    }
+}
+class B extends A 
+{
+   
+   public void show(){
+        System.out.println("great GA!!");
+    }
+
+}
+
