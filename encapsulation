@@ -1,0 +1,36 @@
+//binding  variables with method is called as encapsulation!!
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	 Emp e1=new Emp();
+     e1.setEmpid(3);
+     e1.setEmpname("sakshi");
+     
+     	System.out.println(e1.getEmpname());
+     		System.out.println(e1.getEmpid());
+	}
+}
+
+class Emp
+{
+    private int empid;
+    private String empname;
+    
+    public int getEmpid(){
+        return empid;
+    }
+    
+    public void setEmpname(String empname){
+        this.empname= empname;
+    }
+    
+    
+    public void setEmpid(int empid){
+        this.empid= empid;
+    }
+    public String getEmpname(){
+        return empname;
+    }
+}
