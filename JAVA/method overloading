@@ -1,0 +1,29 @@
+//same name of method and different no and type of parameters are called method overloading!!
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	
+	A obj= new A();
+	obj.show(5.5);
+	 
+	 
+	 
+	}
+}
+class A // method overloading,early binding,static binding,compile time polymorphism
+{
+
+    public void show(){
+        System.out.println("HELLO");
+    }
+     public void show(int i){
+        System.out.println("HELLO"  + i);
+    }
+    
+     public void show(double d){
+        System.out.println("great!!");
+    }
+}
+
