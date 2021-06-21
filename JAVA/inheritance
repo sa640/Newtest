@@ -1,0 +1,48 @@
+//java doesn't support multiple inheritance directly!
+
+public class Main
+{
+	public static void main(String[] args) {
+	 
+	 Addsubmul obj= new Addsubmul();
+	 obj.num1=5;
+	 obj.num2=4;
+	 obj.sum();
+	 System.out.println(obj.result);
+	 
+	 obj.sub();
+	 
+	 System.out.println(obj.result);
+	 
+	 obj.multi();
+	 
+	 System.out.println(obj.result);
+	}
+     
+}
+class Add //parent,super,base class
+{
+    int num1, num2,result=0;
+    public void sum()
+    {
+        result=num1+num2;
+    }
+}
+//single level inheritance
+class Addsub extends Add //child,sub,derived class
+{
+  
+  public void sub()
+    {
+        result=num1-num2;
+    }
+   
+}
+//multilevel inheritance
+class Addsubmul extends Addsub
+{
+    public void multi()
+    {
+    result=num1*num2;
+    }
+}
