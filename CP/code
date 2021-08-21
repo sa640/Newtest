@@ -1,0 +1,44 @@
+// check no can be sum of two prime numbers
+
+def is_prime(n):
+    l=[]
+    for i in range(1,n+1):
+        if n%i==0:
+            l.append(i)
+    if len(l)<=2:
+        return "prime"
+    else:
+        return "not prime"
+        
+k=int(input("enter a no="))
+l1=[]
+result=[]
+for i in range(1,k):
+    if is_prime(i)=="prime" and i<k:
+        l1.append(i)
+print(l1)
+
+for x in l1:
+    for y in l1:
+        if x+y==k:
+            result.append((x,y))
+            l1.remove(x)
+            l1.remove(y)
+            
+if result==[]:
+    print("no cannot be express in sum of two prime no's")
+else:
+    print("pairs which can express no in sum of two prime no's",result )
+
+    
+    
+
+                
+    
+            
+
+
+
+
+
+        
